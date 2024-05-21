@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+/*  font-family: "Concert One", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*  font-family: "Montserrat", sans-serif; */
+
+body, h1, button, ul, input{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left bottom, #ce5200, #f5be9e);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+div{
+    background-color: #ffffff;
+    border: 2px solid rgba(117, 117, 117, 0.456);
+    padding: 20px;
+    border-radius: 13px;
+    width: 90%;
+    max-width: 400px;
+    animation: fadeIn .6s ;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Concert One", sans-serif;
+
+}
+
+::selection{
+    color: #ffffff;
+    background-color: #ce5200;
+}
+
+@keyframes fadeIn {
+ 
+   from{
+    transform: translateY(-8px);
+    opacity: 0.5;
+   }
+
+   to{
+     opacity:1;
+   }
+
+}
+ul{
+    list-style: none;
+    padding: 0;
+    width: 92%;
+   
+}
+
+li{
+    font-family: "Montserrat", sans-serif;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    font-weight: bold;  
+}
+
+li.completed{
+    text-decoration: line-through;
+    color: #aaa;
+
+}
+
+input{
+    width: 90%;
+    padding: 15px;
+    margin: 10px;
+    text-align: start;
+}
+
+button{
+    padding: 10px;
+    background-color: rgb(55, 203, 55);
+    border: none;
+    border-radius:5px;
+    color: rgb(245, 245, 245);  
+    transition: all .2s ease-in-out; 
+}
+
+button:hover, button.deleter-btn:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    opacity: 0.8;
+    border: none;
+}
+
+button.delete-btn{
+    padding: 5px 10px;
+    background-color: #b1352a;
+    border: none;
+    border-radius:5px;
+    color: rgb(245, 245, 245);  
+    transition: all .2s ease-in-out; 
+}
+
